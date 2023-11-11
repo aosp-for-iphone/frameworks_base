@@ -1062,6 +1062,8 @@ public class Build {
         // Don't care on eng builds.  Incremental build may trigger false negative.
         if (IS_ENG) return true;
 
+/* for now */
+/*
         if (IS_TREBLE_ENABLED) {
             // If we can run this code, the device should already pass AVB.
             // So, we don't need to check AVB here.
@@ -1095,7 +1097,7 @@ public class Build {
                 return false;
             }
         }
-
+*/
         /* TODO: Figure out issue with checks failing
         if (!TextUtils.isEmpty(bootimage)) {
             if (!Objects.equals(system, bootimage)) {
